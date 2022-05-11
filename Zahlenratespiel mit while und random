@@ -1,0 +1,23 @@
+# Online Python compiler (interpreter) to run Python online.
+# Write Python 3 code in this online editor and run it.
+
+# 1. ein kurzer Einleitungstext für den Spieler
+print("Lass uns ein Spiel spielen. Ich denk mir eine Zahl aus und du versuchst sie zu erraten. Damits nicht frustrierend wird, gebe ich dir nach dem Versuchen einen Hinweis. Lass uns starten.")
+
+# 2. dann muss der Zufallsgenerator in Form eines Moduls importiert werden
+import random
+
+# 3. die Variable definieren und anschließend die vom Modul random wie Art des Zufalls auswählen. randint bietet sich an, da man hier leicht das min und max eingeben kann uns alle Ereignisse gleich wahrscheinlich sind. Außerdem sind es immer ganzzahlige Zahlen, also die natürlichen Zahlen.
+zufallszahl = random.randint(1, 100)
+
+# 4. da die Anzahl der Versuche nicht limiert ist seintens der Aufgabenstellung, bietet sich hier eine while-Schleife an, da ein Raten bis zum Erraten gefordert ist.
+while True:
+    # 5. jetzt muss noch die eine Variable für die Eingabe definiert werden und weiter um welche Art von Eingabe es sich hier handelt.
+    eingabe = int(input("Deine Vermutnug?"))
+    # 6. jetzt müssen noch die jeweiligen Fälle defniert werden und wie auf welche Eingabe reagiert werden soll.
+    if eingabe == zufallszahl:
+        print ("Hey super, du hast die richtige Zahl erraten!")
+    if eingabe > zufallszahl:
+        print("Versuch es mit kleineren Zahlen ;)")
+    if eingabe < zufallszahl:
+        print("Versuch es mit größeren Zahlen ;)")
