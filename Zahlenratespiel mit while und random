@@ -1,6 +1,3 @@
-# Online Python compiler (interpreter) to run Python online.
-# Write Python 3 code in this online editor and run it.
-
 # 1. ein kurzer Einleitungstext für den Spieler
 print("Lass uns ein Spiel spielen. Ich denk mir eine Zahl aus und du versuchst sie zu erraten. Damits nicht frustrierend wird, gebe ich dir nach dem Versuchen einen Hinweis. Lass uns starten.")
 
